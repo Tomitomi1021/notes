@@ -1,10 +1,10 @@
 # Docker-compose
-詳しい話は[Compose ファイル・リファレンス][1]を参照
+詳しい話は[Compose ファイル・リファレンス](docs.docker.jp/compose/compose-file.html)を参照
 ここでは逆引きを示す。
 
 ## 文法
 サービス等をdocker-compose.ymlで定義する。
-フォーマットはyamlである。詳しくは[yaml][2]を参照。
+フォーマットはyamlである。詳しくは[yaml](https://github.com/Tomitomi1021/notes/blob/master/format/yaml.md)を参照。
 設定項目はservices,networks,volumesの3つである。
 
 ## services
@@ -80,8 +80,3 @@ net1につながるネットワークアダプタにipアドレスを振る例
 	  volume2:
 	    volume2のオプション
 	  ...
-
-<!-- 参考文献  --!>
-
-[1]: docs.docker.jp/compose/compose-file.html
-[2]: https://github.com/Tomitomi1021/notes/blob/master/format/yaml.md
