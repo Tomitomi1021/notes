@@ -17,68 +17,90 @@ services:
     service2の設定
 ```
 ### Dockerfileを指定する
-	build: <dockerfileのあるディレクトリ>
+```
+build: <dockerfileのあるディレクトリ>
+```
 または
-	build:
-	  context: <Dockerfileがある場所のディレクトリ名またはURL>
-	  dockerfile: <Dockerfileの代わりになるもの>
-	  args:	
-	    - 引数名=値
-	    - 引数名=値
-	    ...
-	  または
-	  args:
-	    引数名: 値
-	    引数名: 値
-	    ...
+```
+build:
+  context: <Dockerfileがある場所のディレクトリ名またはURL>
+  dockerfile: <Dockerfileの代わりになるもの>
+  args:	
+    - 引数名=値
+    - 引数名=値
+    ...
+  または
+  args:
+    引数名: 値
+    引数名: 値
+    ...
+```
 ### ポートフォワード設定
-	ports:
-	  - "<ホスト側ポート>:<コンテナ側ポート>"
+```
+ports:
+  - "<ホスト側ポート>:<コンテナ側ポート>"
+```
 ### ネットワークの設定
-	networks:
-	  - <ネットワーク名(ネットワーク設定で定義)>
+```
+networks:
+  - <ネットワーク名(ネットワーク設定で定義)>
+```
 または
-	networks:
-	  <ネットワーク名>:
-	    <オプション>
+```
+networks:
+  <ネットワーク名>:
+    <オプション>
+```
 #### ipアドレスを振る場合
 net1につながるネットワークアダプタにipアドレスを振る例
-	networks:
-	  net1:
-	    ipv4_address: <ipv4 アドレス>
-	    ipv6_address: <ipv6 アドレス>
+```
+networks:
+  net1:
+    ipv4_address: <ipv4 アドレス>
+    ipv6_address: <ipv6 アドレス>
+```
 ### 環境変数の定義
-	environment:
-	  - 変数名=値
-	  - 変数名=値
-	  ...
+```
+environment:
+  - 変数名=値
+  - 変数名=値
+  ...
+```
 または
-	environment:
-	  変数名: 値
-	  変数名: 値
-	  ...
+```
+environment:
+  変数名: 値
+  変数名: 値
+  ...
+```
 ## networks
 個々のネットワークを下のような形式で定義する。
-	networks:
-	  net1:
-	    driver: <ドライバー名>
-	    net1の設定
-	  net2:
-	    driver: <ドライバー名>
-	    net2の設定
-	  ...
+```
+networks:
+  net1:
+    driver: <ドライバー名>
+    net1の設定
+  net2:
+    driver: <ドライバー名>
+    net2の設定
+  ...
+```
 ドライバー名は基本的には単一ホスト上ならbridge、swarm上ならoverlay。
 より詳しい設定は、ipam設定で行える。書き方は以下の通り。
-	ipam:
-	  driver: default
-	  config: 
-	    - subnet: <サブネットアドレス(CIDR表記)>
-	      ip_range: <ネットワークアドレス(CIDR表記)>
-	      gateway:  <ゲートウェイのアドレス(CIDR表記)>
+```
+ipam:
+  driver: default
+  config: 
+    - subnet: <サブネットアドレス(CIDR表記)>
+      ip_range: <ネットワークアドレス(CIDR表記)>
+      gateway:  <ゲートウェイのアドレス(CIDR表記)>
+```
 ## volumes
-	volumes:
-	  volume1:
-	    volume1のオプション
-	  volume2:
-	    volume2のオプション
-	  ...
+```
+volumes:
+  volume1:
+    volume1のオプション
+  volume2:
+    volume2のオプション
+  ...
+```
