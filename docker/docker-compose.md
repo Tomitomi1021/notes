@@ -1,5 +1,5 @@
 # Docker-compose
-詳しい話は[Compose ファイル・リファレンス](docs.docker.jp/compose/compose-file.html)を参照
+詳しい話は[Compose ファイル・リファレンス](docs.docker.jp/compose/compose-file.html)を参照。
 ここでは逆引きを示す。
 
 ## 文法
