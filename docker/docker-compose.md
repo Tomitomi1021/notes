@@ -1,10 +1,10 @@
 # Docker-compose
-詳しい話は[Compose ファイル・リファレンス](docs.docker.jp/compose/compose-file.html)を参照。
+詳しい話は[Compose ファイル・リファレンス](https://docs.docker.jp/compose/compose-file.html)を参照。
 ここでは逆引きを示す。
 
 ## 文法
 サービス等をdocker-compose.ymlで定義する。
-フォーマットはyamlである。詳しくは[yaml](https://github.com/Tomitomi1021/notes/blob/master/format/yaml.md)を参照。
+フォーマットはyamlである。詳しくは[yaml](https://tomitomi1021.github.io/notes/format/yaml.html)を参照。
 設定項目はservices,networks,volumesの3つである。
 
 ## services
