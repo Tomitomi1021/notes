@@ -4,7 +4,7 @@
 
 ## 文法
 サービス等をdocker-compose.ymlで定義する。
-フォーマットはyamlである。詳しくはyamlを参照。
+フォーマットはyamlである。詳しくは[yaml][2]を参照。
 設定項目はservices,networks,volumesの3つである。
 
 ## services
@@ -84,3 +84,4 @@ net1につながるネットワークアダプタにipアドレスを振る例
 <!-- 参考文献  --!>
 
 [1]:docs.docker.jp/compose/compose-file.html
+[2]:https://github.com/Tomitomi1021/notes/blob/master/format/yaml.md
