@@ -9,11 +9,13 @@
 
 ## services
 個々のサービスを下のような形式で定義する。(サービスとコンテナが対応する。)
-	services:
-	  service1:
-	    service1の設定
-	  service2:
-	    service2の設定
+```
+services:
+  service1:
+    service1の設定
+  service2:
+    service2の設定
+```
 ### Dockerfileを指定する
 	build: <dockerfileのあるディレクトリ>
 または
