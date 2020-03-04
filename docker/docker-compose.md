@@ -83,5 +83,5 @@ net1につながるネットワークアダプタにipアドレスを振る例
 
 <!-- 参考文献  --!>
 
-[1]:docs.docker.jp/compose/compose-file.html
-[2]:https://github.com/Tomitomi1021/notes/blob/master/format/yaml.md
+[1]: docs.docker.jp/compose/compose-file.html
+[2]: https://github.com/Tomitomi1021/notes/blob/master/format/yaml.md
