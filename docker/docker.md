@@ -7,7 +7,7 @@
 ### 削除する
 	docker rmi <イメージ名>
 ### コンテナからイメージを作る
-	docker commit <コンテナ> [<リポジトリ名>[:<タグ>]]
+	docker commit <コンテナ> <イメージ名>
 
 ## コンテナ
 ### イメージからコンテナを作る
@@ -25,4 +25,4 @@
 ## Dockerfile
 ### Dockerfileからイメージを作成する。
 	Dockerfileと同じディレクトリで
-	docker build
+	docker build -t <イメージ名>
