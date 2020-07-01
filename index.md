@@ -6,3 +6,6 @@
 
 ## format
 * [yaml](format/yaml.html)
+
+## asm
+* [inlineAssembler](asm/inline.html)
